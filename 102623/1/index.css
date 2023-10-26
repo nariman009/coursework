@@ -1,0 +1,21 @@
+body > section {
+    border: solid 1px black;
+    height: 300px;
+    display: flex; 
+  }
+  
+  section > section {
+    border: solid 1px black;
+    flex: 1;
+    background-color: white;
+  }
+  
+  section > section:first-child {
+    background-color: blue;
+  
+  }
+  
+  section > section:last-child {
+    background-color: red;
+  
+  }
