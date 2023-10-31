@@ -1,0 +1,101 @@
+/* Reset some default styles */
+body, ul {
+    background-color: rgb(102, 139, 139);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Basic styling for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header h2 {
+    color:cadetblue;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    padding-inline: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling for sections */
+section {
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section h1, section h2 {
+    color: #641421;
+}
+
+.contact {
+    display:flex;
+    align-items: center;
+}
+
+.contact img {
+    border-radius: 50%;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Courier new';
+}
+
+.project img {
+    width: 320px;
+    height: 220px;
+
+}
+/* Media queries for responsiveness */
+@media (max-width: 390px) {
+    header {
+        font-size: 18px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
